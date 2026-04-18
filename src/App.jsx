@@ -1,17 +1,21 @@
 import { useState, createContext } from 'react'
 import './App.css'
+import { useSelector, useDispatch } from 'react-redux'
+import { toggle } from './darkModeSlice'
 
 const DarkModeContext = createContext()
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  // const [isDarkMode, setIsDarkMode] = useState(false)
+  const isDarkMode = useSelector((state) => state.darkMode.value);
+  const dispatch = useDispatch();
 
   return (
     <>
-    <DarkModeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
+    <DarkModeContext.Provider value={{ isDarkMode }}>
       <div className={isDarkMode ? 'dark' : 'light'}>
         <h1>Hello, World!</h1>
-        <button onClick={() => setIsDarkMode(!isDarkMode)}>
+        <button onClick={() => dispatch(toggle())}>
           Toggle Dark Mode
         </button>
       </div>
