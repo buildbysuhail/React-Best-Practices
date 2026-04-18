@@ -22,3 +22,17 @@
 	> Keep component files lean
 	
 4- Best Practices for Routing and Navigation
+	> React Routing best practices
+	> Improve perfomance by lazy loading
+	> Use route guards to protect front-end routes
+	
+5- Optimaize Perfomance
+	> Using React.memo, useMemo, and useCallback
+	> Virtualize lists for perfomance
+		- react-window
+	> Profile and dubug apps with React DevTools
+	
+6- Security Best Practices
+	> Protect against cross-site scripting (XSS)
+	> Safe Data handling and avoiding exposing sensitive data
+	
