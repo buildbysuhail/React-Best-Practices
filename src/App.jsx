@@ -3,7 +3,11 @@ import './App.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { toggle } from './darkModeSlice'
 
+import { lazy, Suspense } from 'react'
+
 const DarkModeContext = createContext()
+
+const HomePage = lazy(() => import('./HomePage'))
 
 function App() {
   // const [isDarkMode, setIsDarkMode] = useState(false)
