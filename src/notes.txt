@@ -1,0 +1,15 @@
+								React Best Practices
+								- Pearson (world's leading learning company)
+								  Shaun Wassell
+---------------------------------------------------------------------------------------------------------------------
+
+1- Best Practices for Components
+	> diff types of components
+		- function components: simpler, faster, and the modern React std
+		- class components: Use when dea;ing with legacy codebases
+		- controlled components: form related components that do not manage their own state (ie: some parent component does that)
+		- Uncontrolled components: form related components that Do manage their own state
+		- 'Smart' components: components that handle data-fetching, state management
+		- 'Dumb' components: .... that focus only on UI-related concerns
+		
+2- Best Practices for State Management
