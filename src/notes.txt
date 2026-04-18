@@ -13,3 +13,12 @@
 		- 'Dumb' components: .... that focus only on UI-related concerns
 		
 2- Best Practices for State Management
+	> Manage state with hooks
+	> Manage state with context
+	> Manage state with Redux
+	
+3- Best Practices for Project Organization
+	> diff b/w 'feature-based' and 'function-based' Organization
+	> Keep component files lean
+	
+4- Best Practices for Routing and Navigation
